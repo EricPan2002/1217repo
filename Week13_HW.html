@@ -13,7 +13,7 @@
 		<div id="left"><h3>Your Guess(1~100)</h3></div>
 		<div id="left"><input type="text" id="guess"></div>
 	</div>
-	<div id="playbtn" onclick="guess()">guess</div>
+	<input type="button" id="guess" value="play" name="play" onclick="guess()">
 	<table id="result-table">
 		<thead>
 			<tr>
@@ -24,7 +24,7 @@
 			
 		</tbody>
 	</table>
-	</div>	
+	</div>
 </body>
 <script type="text/javascript">
 	const guess = document.getElementById("guess");
@@ -67,5 +67,5 @@
 		newTr.appendChild(newTd);
 		resultTableBody.appendChild(newTr);
 	}
-</script>
+</script>	
 </html>
